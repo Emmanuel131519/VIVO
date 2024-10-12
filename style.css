@@ -18,12 +18,12 @@
 }
 
 body {
-  max-width: 1536px;
+  max-width: 1936px;
   margin: 0 auto;
 }
 
 .container {
-  max-width: 80%;
+  max-width: 85%;
   margin: 0 auto;
 }
 nav {
@@ -76,6 +76,7 @@ a {
 
 .main-section-1-div-1{
   padding-bottom: 3rem;
+  max-width: 100%;
 }
 
 .main-section-1-div-1 h2{
@@ -103,13 +104,23 @@ a {
 }
 
 .main-section-1 button{
-  width: 135px;
-  height: 40px;
+  width: 205px;
+  height: 58px;
   background-color: var(--yellow);
   color: var(--white);
   font-family: var(--itim);
   font-size: 28px;
   border-radius: 10px;
+  border: none;
+  margin-top: 3rem;
+}
+
+.main-section-2{
+  max-width: 545px;
+}
+
+.main-section-2 img{
+  max-width: 100%;
 }
 
 @media (max-width: 765px) {
@@ -122,6 +133,35 @@ a {
   .Hamburger-icon {
     display: block;
   }
+  #menu-img{
+    display: block;
+  }
 
+  .main-container{
+    flex-direction: column-reverse;
+  }
+
+  .main-section-1{
+    text-align: center;
+  }
+
+  .main-section-1-div-1 h2{
+    font-size: 60.34px;
+    padding-top: 1rem;
+  }
+  .main-section-1-div-1 ul{
+    font-size: 16px;
+    padding-top: 1rem;
+  }
+
+  .main-section-1-div-1{
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .main-section-1 p{
+    font-size: 17.34px;
+    line-height: 24.57px;
+  }
 }
  
