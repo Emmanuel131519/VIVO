@@ -13,10 +13,12 @@
   --light-dark: rgba(48, 48, 48, 1);
   --light: rgba(160, 160, 160, 1);
   --itim: "Itim", sans-serif;
+  --torqouise: rgba(26, 205, 173, 1);
+
 }
 
 body {
-  max-width: 1452px;
+  max-width: 1536px;
   margin: 0 auto;
 }
 
@@ -30,7 +32,7 @@ nav {
   font-family: var(--itim);
   color: var(--yellow);
 }
-ul {
+#nav-inner ul {
   display: flex;
   gap: 30px;
   list-style: none;
@@ -38,6 +40,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--white);
 }
 
 #nav-inner {
@@ -57,11 +60,68 @@ a {
   display: none;
 }
 
+.main-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.main-section-1{
+  max-width: 487px;
+  font-family: var(--itim);
+  font-weight: 400;
+}
+
+.main-section-1-div-1{
+  padding-bottom: 3rem;
+}
+
+.main-section-1-div-1 h2{
+  font-size: 98px;
+  color: var(--very-dark);
+}
+
+.main-section-1-div-1 ul{
+  display: flex;
+  gap: 26px;
+  color: var(--yellow);
+}
+
+.main-section-1-div-1 li:first-child::marker{
+  color: var(--white);
+}
+
+.main-section-1-div-1 li::marker{
+  color:var(--torqouise);
+}
+
+.main-section-1 p{
+  font-size: 28px;
+  line-height: 39.9px;
+}
+
+.main-section-1 button{
+  width: 135px;
+  height: 40px;
+  background-color: var(--yellow);
+  color: var(--white);
+  font-family: var(--itim);
+  font-size: 28px;
+  border-radius: 10px;
+}
+
 @media (max-width: 765px) {
-  ul {
+  .container {
+    max-width: 90%;
+  }
+   #nav-inner ul{
     display: none;
   }
   .Hamburger-icon {
     display: block;
   }
+
 }
+ 
