@@ -14,7 +14,7 @@
   --light: rgba(160, 160, 160, 1);
   --itim: "Itim", sans-serif;
   --torqouise: rgba(26, 205, 173, 1);
-
+--Open-sans: "Open-Sans", sans-serif;
 }
 
 body {
@@ -123,6 +123,50 @@ a {
   max-width: 100%;
 }
 
+footer{
+  background-color: var(--light-dark);
+  margin-top: 3.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+.main-section-3-div-2{
+font-size: 16px;
+font-weight: 400;
+text-align: center;
+font-family: var(--itim);
+color: var(--light);
+}
+
+.footer-div-1{
+  width: 500px;
+}
+
+.footer-div-3-img{
+  max-width: 15px;
+}
+
+#facebook-img{
+  max-width: 8px;
+}
+
+.footer-div-3{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.footer-div-4{
+  background-color: var(--very-dark);
+  text-align: center;
+  color: var(--white);
+  font-family: var(--Open-sans);
+  font-family: Open Sans;
+font-size: 13px;
+font-weight: 400;
+}
+
+
 @media (max-width: 765px) {
   .container {
     max-width: 90%;
@@ -162,6 +206,9 @@ a {
   .main-section-1 p{
     font-size: 17.34px;
     line-height: 24.57px;
+  }
+  .footer-div-4-p{
+    display: none;
   }
 }
  
